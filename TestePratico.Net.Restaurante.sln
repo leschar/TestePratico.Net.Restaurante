@@ -3,9 +3,80 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Services", "01-Services", "{B4918283-3578-4086-BED7-998F2372B88D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Domain", "02-Domain", "{2B0A3993-4F44-4E0E-A7A4-E587823E87E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Infra", "03-Infra", "{E360CB94-5A8A-4D4C-B7EF-25BE1A19741A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Testes", "04-Testes", "{F2D6481E-C008-4AD6-AA07-A697C4516396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestePratico.Net.Restaurante.Api", "TestePratico.Net.Restaurante.Api\TestePratico.Net.Restaurante.Api.csproj", "{E0F2EA42-A04B-48A5-BFCB-4484A4EE17A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestePratico.Net.Restaurante.Domain", "TestePratico.Net.Restaurante.Domain\TestePratico.Net.Restaurante.Domain.csproj", "{005EE87D-91CC-4347-9EE5-F272850DDB21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestePratico.Net.Restaurante.Core", "TestePratico.Net.Restaurante.Core\TestePratico.Net.Restaurante.Core.csproj", "{933E9B72-5B45-4E2B-B401-FE340E9F19A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.1-Data", "03.1-Data", "{E57B05AD-D822-4820-8F37-11849A9411F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.2-CrossCutting", "03.2-CrossCutting", "{E1DDF315-955D-46FA-A6BE-AFAA1F5A0D3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestePratico.Net.Restaurante.Data", "TestePratico.Net.Restaurante.Data\TestePratico.Net.Restaurante.Data.csproj", "{7BB08D36-C343-4135-A00E-A8949857A44B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestePratico.Net.Restaurante.IoC", "TestePratico.Net.Restaurante.IoC\TestePratico.Net.Restaurante.IoC.csproj", "{7DF742B5-1E12-45B2-BA2A-7206379FCCA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestePratico.Net.Restaurante.AspNetFilters", "TestePratico.Net.Restaurante.AspNetFilters\TestePratico.Net.Restaurante.AspNetFilters.csproj", "{26716BD3-704C-42C1-84AC-A0A41F55A94F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestePratico.Net.Restaurante.Tests.API", "TestePratico.Net.Restaurante.Tests.API\TestePratico.Net.Restaurante.Tests.API.csproj", "{0D2C3019-9F73-4D84-99FA-064C9782507E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0F2EA42-A04B-48A5-BFCB-4484A4EE17A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0F2EA42-A04B-48A5-BFCB-4484A4EE17A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0F2EA42-A04B-48A5-BFCB-4484A4EE17A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0F2EA42-A04B-48A5-BFCB-4484A4EE17A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{005EE87D-91CC-4347-9EE5-F272850DDB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005EE87D-91CC-4347-9EE5-F272850DDB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005EE87D-91CC-4347-9EE5-F272850DDB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005EE87D-91CC-4347-9EE5-F272850DDB21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{933E9B72-5B45-4E2B-B401-FE340E9F19A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933E9B72-5B45-4E2B-B401-FE340E9F19A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933E9B72-5B45-4E2B-B401-FE340E9F19A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933E9B72-5B45-4E2B-B401-FE340E9F19A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB08D36-C343-4135-A00E-A8949857A44B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB08D36-C343-4135-A00E-A8949857A44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB08D36-C343-4135-A00E-A8949857A44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB08D36-C343-4135-A00E-A8949857A44B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF742B5-1E12-45B2-BA2A-7206379FCCA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF742B5-1E12-45B2-BA2A-7206379FCCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF742B5-1E12-45B2-BA2A-7206379FCCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF742B5-1E12-45B2-BA2A-7206379FCCA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26716BD3-704C-42C1-84AC-A0A41F55A94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26716BD3-704C-42C1-84AC-A0A41F55A94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26716BD3-704C-42C1-84AC-A0A41F55A94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26716BD3-704C-42C1-84AC-A0A41F55A94F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2C3019-9F73-4D84-99FA-064C9782507E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2C3019-9F73-4D84-99FA-064C9782507E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2C3019-9F73-4D84-99FA-064C9782507E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2C3019-9F73-4D84-99FA-064C9782507E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E0F2EA42-A04B-48A5-BFCB-4484A4EE17A2} = {B4918283-3578-4086-BED7-998F2372B88D}
+		{005EE87D-91CC-4347-9EE5-F272850DDB21} = {2B0A3993-4F44-4E0E-A7A4-E587823E87E4}
+		{933E9B72-5B45-4E2B-B401-FE340E9F19A1} = {2B0A3993-4F44-4E0E-A7A4-E587823E87E4}
+		{E57B05AD-D822-4820-8F37-11849A9411F0} = {E360CB94-5A8A-4D4C-B7EF-25BE1A19741A}
+		{E1DDF315-955D-46FA-A6BE-AFAA1F5A0D3B} = {E360CB94-5A8A-4D4C-B7EF-25BE1A19741A}
+		{7BB08D36-C343-4135-A00E-A8949857A44B} = {E57B05AD-D822-4820-8F37-11849A9411F0}
+		{7DF742B5-1E12-45B2-BA2A-7206379FCCA1} = {E1DDF315-955D-46FA-A6BE-AFAA1F5A0D3B}
+		{26716BD3-704C-42C1-84AC-A0A41F55A94F} = {E1DDF315-955D-46FA-A6BE-AFAA1F5A0D3B}
+		{0D2C3019-9F73-4D84-99FA-064C9782507E} = {F2D6481E-C008-4AD6-AA07-A697C4516396}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40DC7DD8-655E-4BFC-8372-5C53F0A0B222}

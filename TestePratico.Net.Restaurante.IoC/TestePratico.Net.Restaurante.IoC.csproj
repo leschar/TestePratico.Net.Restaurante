@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestePratico.Net.Restaurante.AspNetFilters\TestePratico.Net.Restaurante.AspNetFilters.csproj" />
+    <ProjectReference Include="..\TestePratico.Net.Restaurante.Data\TestePratico.Net.Restaurante.Data.csproj" />
+    <ProjectReference Include="..\TestePratico.Net.Restaurante.Domain\TestePratico.Net.Restaurante.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
